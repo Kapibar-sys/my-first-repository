@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AnsorMed</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.button{
+    border-radius: 1px;
+    color: #2c9cbf;
+    text-align: end;
+}
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+}
+header img {
+    max-width: 150px;
+}
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+.banner {
+    background-color: #f3f3f3;
+    padding: 50px;
+    text-align: center;
+    background-image: url('banner-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.banner .btn {
+    padding: 10px 20px;
+    background-color: #e94b35;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.service-item {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.service-item img {
+    max-width: 100%;
+    height: auto;
+}
+.service-item h3 {
+    font-size: 22px;
+    margin-top: 15px;
+}
+.contact {
+    background-color: #2c9cbf;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form input, .contact form textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+.contact form button {
+    padding: 10px 20px;
+    background-color: #e94b35;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.map {
+    margin-top: 30px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvvLDufK1c995wXvLsyn_LMIreLZSxOTy7Rg&s" alt="AnsorMed Logo">
+    <nav>
+        <a href="#">Xizmatlar</a>
+        <a href="#">Dorilar</a>
+        <a href="#">Asal</a>
+       <button class="button">qabulga yozilish</button>
+    </nav>
+</header>
+
+<section class="banner">
+    <h1>Tabiiy davolash usullari yordamida kasalliklardan xalos bo'ling</h1>
+    <a href="#" class="btn">Qabulga yozilish</a>
+</section>
+
+<section class="content">
+    <h2>Xizmatlar</h2>
+    <div class="services">
+            <div class="item-1">
+                <div class="photo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE4OueMYzgMfd_wGXQfD6q-IW7OtXaFbATMQ&s" alt="Hijoma">
+                </div>
+                <div class="text">
+                    <h3>Hijoma</h3>
+                    <br>
+                    <p>Imom Termiziy Abdulloh ibn Abbas roziyallohu anhumodan rivoyat qilgan hadisda rasululloh shalollahu alayhi va sallam dedilar...</p>
+                </div>
+        </div>
+        <div class="service-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbuu2eWF_eqiwvtLJwJf-NktvSIAE3i5LecQ&s" alt="Manual terapiya">
+            <h3>Manual terapiya</h3>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt voluptate earum ex est tempore laborum vero, unde neque sequi, molestiae dignissimos esse sit, consequuntur ut quaerat! Iure totam sapiente reprehenderit.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact me</h2>
+    <form action="#">
+        <input type="text" placeholder="Ism">
+        <input type="text" placeholder="Familiya">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Xabar" rows="5"></textarea>
+        <button type="submit">Jonatish</button>
+    </form>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d882.8501213827211!2d69.20662740816559!3d41.28860594997851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bcd80edf5eb%3A0x4705eb7387d04907!2sYangi%20Asr%20universiteti!5e0!3m2!1sen!2s!4v1723787225081!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<footer>
+    <p>AnsorMed © 2024</p>
+</footer>
+
+</body>
+</html>
